@@ -1,0 +1,169 @@
+{
+    "rules": {
+        // following is recommended by typescript-eslint
+        "@typescript-eslint/adjacent-overload-signatures": "error",
+        "@typescript-eslint/ban-ts-comment": "error",
+        "@typescript-eslint/ban-types": "error",
+        // "@typescript-eslint/explicit-module-boundary-types": "warn",
+        "no-array-constructor": "off",
+        "@typescript-eslint/no-array-constructor": "error",
+        "no-empty-function": "off",
+        "@typescript-eslint/no-empty-function": "error",
+        "@typescript-eslint/no-empty-interface": "error",
+        "@typescript-eslint/no-explicit-any": "warn",
+        "@typescript-eslint/no-extra-non-null-assertion": "error",
+        "no-extra-semi": "off",
+        "@typescript-eslint/no-extra-semi": "error",
+        "@typescript-eslint/no-inferrable-types": "error",
+        "@typescript-eslint/no-misused-new": "error",
+        "@typescript-eslint/no-namespace": "error",
+        "@typescript-eslint/no-non-null-asserted-optional-chain": "error",
+        "@typescript-eslint/no-non-null-assertion": "warn",
+        "@typescript-eslint/no-this-alias": "error",
+        "no-unused-vars": "off",
+        "@typescript-eslint/no-unused-vars": "warn",
+        "@typescript-eslint/no-var-requires": "error",
+        "@typescript-eslint/prefer-as-const": "error",
+        "@typescript-eslint/prefer-namespace-keyword": "error",
+        "@typescript-eslint/triple-slash-reference": "error",
+        // following requires type checking
+        "@typescript-eslint/await-thenable": "error",
+        "@typescript-eslint/no-floating-promises": "error",
+        "@typescript-eslint/no-for-in-array": "error",
+        "@typescript-eslint/no-implied-eval": "error",
+        "@typescript-eslint/no-misused-promises": "error",
+        "@typescript-eslint/no-unnecessary-type-assertion": "error",
+        "@typescript-eslint/no-unsafe-assignment": "error",
+        "@typescript-eslint/no-unsafe-call": "error",
+        "@typescript-eslint/no-unsafe-member-access": "error",
+        "@typescript-eslint/no-unsafe-return": "error",
+        "@typescript-eslint/prefer-regexp-exec": "error",
+        "require-await": "off",
+        "@typescript-eslint/require-await": "error",
+        "@typescript-eslint/restrict-plus-operands": "error",
+        "@typescript-eslint/restrict-template-expressions": "error",
+        "@typescript-eslint/unbound-method": "error",
+        // following is personal preference
+        "no-console": "error",
+        "@typescript-eslint/explicit-function-return-type": "error",
+        "@typescript-eslint/explicit-member-accessibility": [
+            "error",
+            { "accessibility": "explicit" }
+        ],
+        "@typescript-eslint/no-require-imports": "error",
+        "@typescript-eslint/no-unnecessary-boolean-literal-compare": "error",
+        "@typescript-eslint/no-unnecessary-condition": "error",
+        "@typescript-eslint/member-ordering": [
+            "error",
+            {
+                "default": {
+                    "memberTypes": [
+                        // Index signature
+                        "signature",
+
+                        // Fields
+                        "public-static-field",
+                        "protected-static-field",
+                        "private-static-field",
+
+                        "public-decorated-field",
+                        "protected-decorated-field",
+                        "private-decorated-field",
+
+                        "public-instance-field",
+                        "protected-instance-field",
+                        "private-instance-field",
+
+                        "public-abstract-field",
+                        "protected-abstract-field",
+                        "private-abstract-field",
+
+                        "public-field",
+                        "protected-field",
+                        "private-field",
+
+                        "static-field",
+                        "instance-field",
+                        "abstract-field",
+
+                        "decorated-field",
+
+                        "field",
+
+                        // Constructors
+                        "public-constructor",
+                        "protected-constructor",
+                        "private-constructor",
+
+                        "constructor",
+
+                        // Methods
+                        "public-static-method",
+                        "protected-static-method",
+                        "private-static-method",
+
+                        "public-decorated-method",
+                        "protected-decorated-method",
+                        "private-decorated-method",
+
+                        "public-instance-method",
+                        "protected-instance-method",
+                        "private-instance-method",
+
+                        "public-abstract-method",
+                        "protected-abstract-method",
+                        "private-abstract-method",
+
+                        "public-method",
+                        "protected-method",
+                        "private-method",
+
+                        "static-method",
+                        "instance-method",
+                        "abstract-method",
+
+                        "decorated-method",
+
+                        "method"
+                    ],
+                    "order": "alphabetically"
+                }
+            }
+        ],
+        "@typescript-eslint/array-type": ["error", { "default": "array" }],
+        "@typescript-eslint/naming-convention": [
+            "error",
+            { "selector": "variableLike", "format": ["camelCase"] },
+            {
+                "selector": "variable",
+                "modifiers": ["const"],
+                "format": ["UPPER_CASE"]
+            },
+            {
+                "selector": "variable",
+                "types": ["boolean"],
+                "format": ["PascalCase"],
+                "prefix": ["is", "should", "has", "can", "did", "will"]
+            },
+            {
+                "selector": "property",
+                "types": ["boolean"],
+                "format": ["PascalCase"],
+                "prefix": ["is", "should", "has", "can", "did", "will"]
+            },
+            { "selector": "typeLike", "format": ["PascalCase"] }
+        ],
+        "@typescript-eslint/promise-function-async": "error",
+        "no-return-await": "off",
+        "@typescript-eslint/return-await": "error",
+        "space-before-function-paren": "off",
+        "@typescript-eslint/space-before-function-paren": [
+            "error",
+            {
+                "anonymous": "always",
+                "named": "never",
+                "asyncArrow": "always"
+            }
+        ]
+    }
+}

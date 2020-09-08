@@ -1,0 +1,4 @@
+{
+    "prettier.configPath": ".prettierrc",
+    "prettier.tabWidth": 4
+}

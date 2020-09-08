@@ -1,8 +1,8 @@
 {
-    "name": "backend",
+    "name": "node-starter",
     "version": "1.0.0",
     "description": "",
-    "main": "index.js",
+    "main": "index.ts",
     "scripts": {
         "build": "rimraf ./build && tsc",
         "lint": "eslint . --ext .ts",

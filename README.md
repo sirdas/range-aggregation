@@ -1,3 +1,3 @@
 # node-starter
 
-Backend starter for node.js with TS
+Backend starter for node.js with TypeScript

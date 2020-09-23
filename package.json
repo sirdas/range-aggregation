@@ -8,7 +8,8 @@
         "lint": "eslint . --ext .ts",
         "prettier": "prettier --config .prettierrc 'src/**/*.ts' --write",
         "start:dev": "nodemon",
-        "start": "npm run build && node build/index.js"
+        "start": "npm run build && node build/index.js",
+        "test": "jest"
     },
     "husky": {
         "hooks": {
@@ -21,6 +22,9 @@
             "prettier --config .prettierrc --write"
         ]
     },
+    "jest": {
+        "preset": "ts-jest"
+    },
     "keywords": [],
     "author": "",
     "license": "ISC",
@@ -31,10 +35,12 @@
         "eslint": "^7.8.1",
         "eslint-config-prettier": "^6.11.0",
         "husky": "^4.3.0",
+        "jest": "^26.4.2",
         "lint-staged": "^10.3.0",
         "nodemon": "^2.0.4",
         "prettier": "^2.1.1",
         "rimraf": "^3.0.2",
+        "ts-jest": "^26.4.0",
         "ts-node": "^9.0.0",
         "typescript": "^4.0.2"
     }

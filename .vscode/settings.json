@@ -1,5 +1,0 @@
-{
-    "prettier.configPath": ".prettierrc",
-    "prettier.tabWidth": 4,
-    "prettier.printWidth": 120
-}
